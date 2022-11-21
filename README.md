@@ -8,6 +8,21 @@ Copy tmux.conf into your home directory
 copy tmux.conf ${HOME}/.tmux.conf
 ```
 
+## Plugin Manager
+
+### Install
+
+```sh
+$ git cone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+### Install Plugins
+
+Add new plugin to "~/.tmux.conf" with "set -g @plugin ...".
+
+Press prefix + I (capital i, as in Install) to fetch the plugin.
+
+
 ## Usage
 
 ### Create Session
@@ -78,5 +93,7 @@ tmux ls
     List Sessions           : <Prefix> s
     List Windows            : <Prefix> w
     List Panes              : <Prefix> q
+
+
 
 
